@@ -1,0 +1,42 @@
+plugins {
+    id "com.android.library"
+    id "kotlin-android"
+    id "org.jetbrains.kotlin.plugin.compose"
+}
+
+android {
+    namespace = "com.heckofanapp.search"
+
+    defaultConfig {
+        compileSdk = 36
+        minSdk = 28
+        targetSdk = 36
+    }
+
+    buildFeatures {
+        compose = true
+    }
+
+    compileOptions {
+        sourceCompatibility = "$version_java"
+        targetCompatibility = "$version_java"
+    }
+
+    ktlint {
+        android = true
+        ignoreFailures = false
+        verbose = true
+    }
+}
+
+dependencies {
+    implementation platform("androidx.compose:compose-bom:$version_compose")
+
+    implementation "androidx.compose.animation:animation-graphics"
+    implementation "androidx.compose.material3:material3"
+    implementation "androidx.compose.ui:ui"
+    implementation "androidx.compose.ui:ui-tooling-preview"
+    implementation "androidx.constraintlayout:constraintlayout-compose:1.1.1"
+
+    debugImplementation "androidx.compose.ui:ui-tooling"
+}
