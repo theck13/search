@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animated-vector
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <aapt:attr
+        name="android:drawable">
+
+        <vector
+            android:name="av_from_menu_to_arrow_start"
+            android:height="24dp"
+            android:viewportHeight="24"
+            android:viewportWidth="24"
+            android:width="24dp">
+
+            <group
+                android:name="group_menu"
+                android:pivotX="12"
+                android:pivotY="12">
+
+                <path
+                    android:name="path_menu_bottom"
+                    android:fillColor="#ff000000"
+                    android:pathData="@string/data_path_from_menu_to_arrow_start_24_menu_bottom"
+                    android:strokeWidth="1">
+                </path>
+
+                <path
+                    android:name="path_menu_middle"
+                    android:fillColor="#ff000000"
+                    android:pathData="@string/data_path_from_menu_to_arrow_start_24_menu_middle">
+                </path>
+
+                <path
+                    android:name="path_menu_top"
+                    android:fillColor="#ff000000"
+                    android:pathData="@string/data_path_from_menu_to_arrow_start_24_menu_top">
+                </path>
+
+            </group>
+
+        </vector>
+
+    </aapt:attr>
+
+    <target
+        android:name="group_menu">
+
+        <aapt:attr
+            name="android:animation">
+
+            <objectAnimator
+                android:duration="@integer/animation_icon_duration_menu"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="rotation"
+                android:valueFrom="0"
+                android:valueTo="180"
+                android:valueType="floatType">
+            </objectAnimator>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="path_menu_bottom">
+
+        <aapt:attr
+            name="android:animation">
+
+            <objectAnimator
+                android:duration="@integer/animation_icon_duration_menu"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="pathData"
+                android:valueFrom="@string/data_path_from_menu_to_arrow_start_24_menu_bottom"
+                android:valueTo="@string/data_path_from_menu_to_arrow_start_24_arrow_start_bottom"
+                android:valueType="pathType">
+            </objectAnimator>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="path_menu_middle">
+
+        <aapt:attr
+            name="android:animation">
+
+            <objectAnimator
+                android:duration="@integer/animation_icon_duration_menu"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="pathData"
+                android:valueFrom="@string/data_path_from_menu_to_arrow_start_24_menu_middle"
+                android:valueTo="@string/data_path_from_menu_to_arrow_start_24_arrow_start_middle"
+                android:valueType="pathType">
+            </objectAnimator>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="path_menu_top">
+
+        <aapt:attr
+            name="android:animation">
+
+            <objectAnimator
+                android:duration="@integer/animation_icon_duration_menu"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="pathData"
+                android:valueFrom="@string/data_path_from_menu_to_arrow_start_24_menu_top"
+                android:valueTo="@string/data_path_from_menu_to_arrow_start_24_arrow_start_top"
+                android:valueType="pathType">
+            </objectAnimator>
+
+        </aapt:attr>
+
+    </target>
+
+</animated-vector>

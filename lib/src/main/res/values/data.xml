@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- DO NOT TRANSLATE -->
+
+    <string name="data_path_from_menu_to_arrow_start_24_arrow_start_bottom" translatable="false">M 12 20 L 20 12 L 18.586 10.586 L 10.586 18.586 L 12 20 Z</string>
+    <string name="data_path_from_menu_to_arrow_start_24_arrow_start_middle" translatable="false">M 4 13 L 19 13 L 19 11 L 4 11 L 4 13 Z</string>
+    <string name="data_path_from_menu_to_arrow_start_24_arrow_start_top" translatable="false">M 12 4 L 10.586 5.414 L 18.586 13.414 L 20 12 L 12 4 Z</string>
+    <string name="data_path_from_menu_to_arrow_start_24_menu_bottom" translatable="false">M 3 18 L 21 18 L 21 16 L 3 16 L 3 18 Z</string>
+    <string name="data_path_from_menu_to_arrow_start_24_menu_middle" translatable="false">M 3 13 L 21 13 L 21 11 L 3 11 L 3 13 Z</string>
+    <string name="data_path_from_menu_to_arrow_start_24_menu_top" translatable="false">M 3 6 L 3 8 L 21 8 L 21 6 L 3 6 Z</string>
+    <string name="data_path_from_search_to_arrow_start_24_arrow_start_bottom" translatable="false">M 6.625 13.006 C 4.825 11.206 4.825 8.406 6.625 6.606 L 5.225 5.206 C 2.625 7.706 2.625 11.806 5.225 14.406 C 7.825 17.006 11.825 16.906 14.425 14.406 L 13.025 13.006 C 11.225 14.706 8.425 14.706 6.625 13.006 Z</string>
+    <string name="data_path_from_search_to_arrow_start_24_arrow_start_middle" translatable="false">M 15.425 14.006 L 14.025 14.006 L 14.025 15.406 L 19.325 20.706 L 20.025 20.006 L 20.725 19.306 L 15.425 14.006</string>
+    <string name="data_path_from_search_to_arrow_start_24_arrow_start_top" translatable="false">M 13.025 6.606 C 14.825 8.406 14.825 11.206 13.025 13.006 L 14.425 14.406 C 16.925 11.906 16.925 7.706 14.425 5.206 C 11.925 2.706 7.725 2.606 5.225 5.206 L 6.625 6.606 C 8.325 4.806 11.225 4.806 13.025 6.606 Z</string>
+    <string name="data_path_from_search_to_arrow_start_24_menu_bottom" translatable="false">M 6.008 10.4 C 4.208 8.6 3.408 7.8 2.008 6.4 L 0.608 7.9 C 2.508 9.8 2.108 9.4 4.608 11.9 C 7.108 14.4 6.608 13.9 8.608 15.9 L 10.008 14.5 C 8.808 13.2 7.808 12.2 6.008 10.4 Z</string>
+    <string name="data_path_from_search_to_arrow_start_24_menu_middle" translatable="false">M 7.743 6.343 L 6.343 6.343 L 6.343 7.743 L 16.957 18.357 L 17.657 17.657 L 18.357 16.957 L 7.743 6.343</string>
+    <string name="data_path_from_search_to_arrow_start_24_menu_top" translatable="false">M 10.4 6.008 C 12.2 7.808 12.9 8.508 14.4 10.008 L 15.8 8.608 C 13.5 6.308 14.3 7.108 11.8 4.608 C 9.3 2.108 9.9 2.708 7.8 0.608 L 6.4 2.008 C 8.2 3.808 8.7 4.208 10.4 6.008 Z</string>
+
+</resources>

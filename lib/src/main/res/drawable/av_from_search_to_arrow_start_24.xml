@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animated-vector
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <aapt:attr
+        name="android:drawable">
+
+        <vector
+            android:name="av_from_search_to_arrow_start"
+            android:height="24dp"
+            android:viewportHeight="24"
+            android:viewportWidth="24"
+            android:width="24dp">
+
+            <group
+                android:name="group_all"
+                android:pivotX="12"
+                android:pivotY="12">
+
+                <group
+                    android:name="group_bottom"
+                    android:pivotX="6.5154"
+                    android:pivotY="11.1719">
+
+                    <path
+                        android:name="path_bottom"
+                        android:fillColor="#ff000000"
+                        android:pathData="@string/data_path_from_search_to_arrow_start_24_arrow_start_bottom"
+                        android:strokeWidth="1">
+                    </path>
+
+                </group>
+
+                <path
+                    android:name="path_middle"
+                    android:fillColor="#ff000000"
+                    android:pathData="@string/data_path_from_search_to_arrow_start_24_arrow_start_middle"
+                    android:strokeWidth="1">
+                </path>
+
+                <group
+                    android:name="group_top"
+                    android:pivotX="11.1719"
+                    android:pivotY="6.5154">
+
+                    <path
+                        android:name="path_top"
+                        android:fillColor="#ff000000"
+                        android:pathData="@string/data_path_from_search_to_arrow_start_24_arrow_start_top"
+                        android:strokeWidth="1">
+                    </path>
+
+                </group>
+
+            </group>
+
+        </vector>
+
+    </aapt:attr>
+
+    <target
+        android:name="path_bottom">
+
+        <aapt:attr
+            name="android:animation">
+
+            <objectAnimator
+                android:duration="@integer/animation_icon_duration_search"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="pathData"
+                android:valueFrom="@string/data_path_from_search_to_arrow_start_24_arrow_start_bottom"
+                android:valueTo="@string/data_path_from_search_to_arrow_start_24_menu_bottom"
+                android:valueType="pathType">
+            </objectAnimator>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="path_middle">
+
+        <aapt:attr
+            name="android:animation">
+
+            <objectAnimator
+                android:duration="@integer/animation_icon_duration_search"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="pathData"
+                android:valueFrom="@string/data_path_from_search_to_arrow_start_24_arrow_start_middle"
+                android:valueTo="@string/data_path_from_search_to_arrow_start_24_menu_middle"
+                android:valueType="pathType">
+            </objectAnimator>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="path_top">
+
+        <aapt:attr
+            name="android:animation">
+
+            <objectAnimator
+                android:duration="@integer/animation_icon_duration_search"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="pathData"
+                android:valueFrom="@string/data_path_from_search_to_arrow_start_24_arrow_start_top"
+                android:valueTo="@string/data_path_from_search_to_arrow_start_24_menu_top"
+                android:valueType="pathType">
+            </objectAnimator>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="group_all">
+
+        <aapt:attr
+            name="android:animation">
+
+            <objectAnimator
+                android:duration="@integer/animation_icon_duration_search"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="rotation"
+                android:valueFrom="0"
+                android:valueTo="-45"
+                android:valueType="floatType">
+            </objectAnimator>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="group_bottom">
+
+        <aapt:attr
+            name="android:animation">
+
+            <objectAnimator
+                android:duration="@integer/animation_icon_duration_search"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="rotation"
+                android:valueFrom="0"
+                android:valueTo="-135"
+                android:valueType="floatType">
+            </objectAnimator>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="group_top">
+
+        <aapt:attr
+            name="android:animation">
+
+            <objectAnimator
+                android:duration="@integer/animation_icon_duration_search"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="rotation"
+                android:valueFrom="0"
+                android:valueTo="135"
+                android:valueType="floatType">
+            </objectAnimator>
+
+        </aapt:attr>
+
+    </target>
+
+</animated-vector>
