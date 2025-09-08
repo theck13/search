@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.Composable
+import androidx.navigation.compose.rememberNavController
 import com.heckofanapp.search.PreviewDarkLightPhoneLandscape
 import com.heckofanapp.search.PreviewDarkLightPhonePortrait
 import com.heckofanapp.storybook.theme.StorybookTheme
@@ -15,6 +16,10 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             StorybookTheme {
+                NavigationHost(
+                    navHostController = rememberNavController(),
+                    startDestination = NavigationItem.Search.route.name,
+                )
             }
         }
     }
@@ -25,5 +30,8 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun PreviewMain() {
     StorybookTheme {
+        LayoutSearch(
+            title = NavigationRoute.Search.name,
+        )
     }
 }

@@ -4,4 +4,24 @@
 
     <string name="app_name">Storybook</string>
 
+    <string name="action_back">Back</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_search">Search</string>
+
+    <string name="attributes">Attributes</string>
+    <string name="attributes_search_description">Tap the search field, toggle the switches, and select an icon to see the search field change states.</string>
+    <string name="attributes_search_expanded">Expanded</string>
+    <string name="attributes_search_focused">Focused</string>
+    <string name="attributes_search_icon_dropdown">Icon</string>
+    <string name="attributes_search_icon_menu">@string/icon_menu</string>
+    <string name="attributes_search_icon_search">@string/icon_search</string>
+
+    <string name="components_search">Search</string>
+    <string name="components_search_description">Search allows users to enter a keyword or phrase and get relevant information.  It’s an alternative to other forms of filtering and navigation.  Search has two states; collapsed and expanded.</string>
+
+    <string name="examples">Examples</string>
+    <string name="examples_search_description">Tap the search field below and enter text to see search in action.</string>
+    <string name="examples_search_placeholder_collapsed">Search games</string>
+    <string name="examples_search_placeholder_expanded">Enter game or console</string>
+
 </resources>

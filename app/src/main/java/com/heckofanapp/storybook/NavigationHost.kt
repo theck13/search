@@ -17,6 +17,9 @@ fun NavigationHost(
         composable(
             route = NavigationItem.Search.route.name,
         ) {
+            LayoutSearch(
+                title = NavigationItem.Search.route.name,
+            )
         }
     }
 }
