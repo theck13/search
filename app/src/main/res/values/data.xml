@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- DO NOT TRANSLATE -->
+
+    <string name="toast_doom" translatable="false">&#x69;\u0064&#x64;&#x71;\u0064</string>
+    <string name="toast_goldeneye" translatable="false">\u004c&#x002b;\u25b2&#x0020;\u0043\u25b2&#x0020;\u0052&#x002b;\u25b6&#x0020;\u004c&#x002b;\u0052&#x002b;\u0043\u25c0&#x0020;\u004c&#x002b;\u25b2&#x0020;\u0052&#x002b;\u0043\u25bc&#x0020;\u004c&#x002b;\u0043\u25bc&#x0020;\u004c&#x002b;\u0052&#x002b;\u0043\u25bc&#x0020;\u004c&#x002b;\u0052&#x002b;\u25b2&#x0020;\u004c&#x002b;\u0043\u25bc</string>
+    <string name="toast_spaceinvaders" translatable="false">\u0047&#x0041;&#x004d;&#x0045;\u0020&#x0052;\u0045\u0053&#x0045;\u0054\u0020\u002b&#x0020;\u0050\u004f\u0057\u0045\u0052\u0020\u004f&#x004e;</string>
+    <string name="toast_supermariobrothers" translatable="false">\u0041&#x0020;\u002B&#x0020;\u0053&#x0054;\u0041&#x0052;\u0054</string>
+
+</resources>
