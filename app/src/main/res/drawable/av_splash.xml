@@ -1,0 +1,1315 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animated-vector
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <aapt:attr
+        name="android:drawable">
+
+        <vector
+            android:name="av_splash"
+            android:height="432dp"
+            android:viewportHeight="432"
+            android:viewportWidth="432"
+            android:width="432dp">
+
+            <group
+                android:name="group_all">
+
+                <group
+                    android:name="group_book">
+
+                    <path
+                        android:name="path_cover_back"
+                        android:fillColor="@color/icon_cover"
+                        android:pathData="@string/data_path_splash_cover_back">
+                    </path>
+
+                    <path
+                        android:name="path_shadow_back"
+                        android:fillAlpha="0.30"
+                        android:fillColor="@color/icon_shadow"
+                        android:pathData="@string/data_path_splash_shadow_back">
+                    </path>
+
+                    <path
+                        android:name="path_shine_back"
+                        android:fillAlpha="0.20"
+                        android:fillColor="@color/icon_shine"
+                        android:pathData="@string/data_path_splash_spine_back">
+                    </path>
+
+                    <path
+                        android:name="path_page_back"
+                        android:fillColor="@color/icon_page_back"
+                        android:pathData="@string/data_path_splash_page_back">
+                    </path>
+
+                    <path
+                        android:name="path_text_book_front"
+                        android:fillColor="@color/icon_text_front"
+                        android:pathData="@string/data_path_splash_text_book">
+                    </path>
+
+                    <group
+                        android:name="group_page_4_front">
+
+                        <path
+                            android:name="path_page_4_front"
+                            android:fillColor="@color/icon_page_back"
+                            android:pathData="@string/data_path_splash_empty">
+                        </path>
+
+                        <path
+                            android:name="path_text_k_front"
+                            android:fillColor="@color/icon_text_back"
+                            android:pathData="@string/data_path_splash_text_k">
+                        </path>
+
+                    </group>
+
+                    <group
+                        android:name="group_page_3_front">
+
+                        <path
+                            android:name="path_page_3_front"
+                            android:fillColor="@color/icon_page_back"
+                            android:pathData="@string/data_path_splash_empty">
+                        </path>
+
+                        <path
+                            android:name="path_text_c_front"
+                            android:fillColor="@color/icon_text_back"
+                            android:pathData="@string/data_path_splash_text_c">
+                        </path>
+
+                    </group>
+
+                    <group
+                        android:name="group_page_2_front">
+
+                        <path
+                            android:name="path_page_2_front"
+                            android:fillColor="@color/icon_page_back"
+                            android:pathData="@string/data_path_splash_empty">
+                        </path>
+
+                        <path
+                            android:name="path_text_e_front"
+                            android:fillColor="@color/icon_text_back"
+                            android:pathData="@string/data_path_splash_text_e">
+                        </path>
+
+                    </group>
+
+                    <group
+                        android:name="group_page_1_front">
+
+                        <path
+                            android:name="path_page_1_front"
+                            android:fillColor="@color/icon_page_back"
+                            android:pathData="@string/data_path_splash_empty">
+                        </path>
+
+                        <path
+                            android:name="path_text_h_front"
+                            android:fillColor="@color/icon_text_back"
+                            android:pathData="@string/data_path_splash_text_h">
+                        </path>
+
+                    </group>
+
+                    <group
+                        android:name="group_cover_front">
+
+                        <path
+                            android:name="path_cover_front"
+                            android:fillColor="@color/icon_cover"
+                            android:pathData="@string/data_path_splash_cover_back">
+                        </path>
+
+                        <path
+                            android:name="path_spine_front"
+                            android:fillColor="@color/icon_spine"
+                            android:pathData="@string/data_path_splash_spine_front">
+                        </path>
+
+                        <path
+                            android:name="path_shadow_front"
+                            android:fillAlpha="0.30"
+                            android:fillColor="@color/icon_shadow"
+                            android:pathData="@string/data_path_splash_shadow_back">
+                        </path>
+
+                        <path
+                            android:name="path_shine_front"
+                            android:fillAlpha="0.20"
+                            android:fillColor="@color/icon_shine"
+                            android:pathData="@string/data_path_splash_spine_back">
+                        </path>
+
+                    </group>
+
+                    <group
+                        android:name="group_page_1_back">
+
+                        <path
+                            android:name="path_page_1_back"
+                            android:fillColor="@color/icon_page_front"
+                            android:pathData="@string/data_path_splash_empty">
+                        </path>
+
+                        <path
+                            android:name="path_text_o_back"
+                            android:fillColor="@color/icon_text_back"
+                            android:pathData="@string/data_path_splash_empty">
+                        </path>
+
+                    </group>
+
+                    <group
+                        android:name="group_page_2_back">
+
+                        <path
+                            android:name="path_page_2_back"
+                            android:fillColor="@color/icon_page_front"
+                            android:pathData="@string/data_path_splash_empty">
+                        </path>
+
+                        <path
+                            android:name="path_text_f_back"
+                            android:fillColor="@color/icon_text_back"
+                            android:pathData="@string/data_path_splash_empty">
+                        </path>
+
+                    </group>
+
+                    <group
+                        android:name="group_page_3_back">
+
+                        <path
+                            android:name="path_page_3_back"
+                            android:fillColor="@color/icon_page_front"
+                            android:pathData="@string/data_path_splash_empty">
+                        </path>
+
+                        <path
+                            android:name="path_text_a_back"
+                            android:fillColor="@color/icon_text_back"
+                            android:pathData="@string/data_path_splash_empty">
+                        </path>
+
+                    </group>
+
+                    <group
+                        android:name="group_page_4_back">
+
+                        <path
+                            android:name="path_page_4_back"
+                            android:fillColor="@color/icon_page_front"
+                            android:pathData="@string/data_path_splash_empty">
+                        </path>
+
+                        <path
+                            android:name="path_text_story_back"
+                            android:fillColor="@color/icon_text_front"
+                            android:pathData="@string/data_path_splash_empty">
+                        </path>
+
+                    </group>
+
+                </group>
+
+                <group
+                    android:name="group_closure">
+
+                    <path
+                        android:name="path_strap"
+                        android:fillColor="@color/icon_text_front"
+                        android:pathData="@string/data_path_splash_strap">
+                    </path>
+
+                    <path
+                        android:name="path_strap_shadow"
+                        android:fillAlpha="0.30"
+                        android:fillColor="@color/icon_shadow"
+                        android:pathData="@string/data_path_splash_strap_shadow">
+                    </path>
+
+                    <path
+                        android:name="path_strap_shine"
+                        android:fillAlpha="0.20"
+                        android:fillColor="@color/icon_shine"
+                        android:pathData="@string/data_path_splash_strap_shine">
+                    </path>
+
+                    <path
+                        android:name="path_snap"
+                        android:fillColor="@color/icon_snap"
+                        android:pathData="@string/data_path_splash_snap">
+                    </path>
+
+                </group>
+
+            </group>
+
+        </vector>
+
+    </aapt:attr>
+
+    <target
+        android:name="group_all">
+
+        <aapt:attr
+            name="android:animation">
+
+            <set>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_06"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"
+                    android:propertyName="pivotX"
+                    android:startOffset="@integer/animation_splash_offset_03"
+                    android:valueFrom="216"
+                    android:valueTo="216"
+                    android:valueType="floatType">
+                </objectAnimator>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_06"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"
+                    android:propertyName="pivotY"
+                    android:startOffset="@integer/animation_splash_offset_03"
+                    android:valueFrom="216"
+                    android:valueTo="216"
+                    android:valueType="floatType">
+                </objectAnimator>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_06"
+                    android:interpolator="@android:interpolator/linear_out_slow_in"
+                    android:propertyName="scaleX"
+                    android:startOffset="@integer/animation_splash_offset_03"
+                    android:valueFrom="1"
+                    android:valueTo="0.8"
+                    android:valueType="floatType">
+                </objectAnimator>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_06"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"
+                    android:propertyName="scaleY"
+                    android:startOffset="@integer/animation_splash_offset_03"
+                    android:valueFrom="1"
+                    android:valueTo="0.8"
+                    android:valueType="floatType">
+                </objectAnimator>
+
+            </set>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="group_book">
+
+        <aapt:attr
+            name="android:animation">
+
+            <objectAnimator
+                android:duration="@integer/animation_splash_duration_05"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="translateX"
+                android:startOffset="@integer/animation_splash_offset_04"
+                android:valueFrom="0"
+                android:valueTo="72"
+                android:valueType="floatType">
+            </objectAnimator>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="group_cover_front">
+
+        <aapt:attr
+            name="android:animation">
+
+            <set>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/accelerate_interpolator"
+                    android:propertyName="scaleX"
+                    android:startOffset="@integer/animation_splash_offset_04"
+                    android:valueFrom="1"
+                    android:valueTo="0"
+                    android:valueType="floatType">
+                </objectAnimator>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/accelerate_interpolator"
+                    android:propertyName="translateX"
+                    android:startOffset="@integer/animation_splash_offset_04"
+                    android:valueFrom="0"
+                    android:valueTo="144"
+                    android:valueType="floatType">
+                </objectAnimator>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/decelerate_interpolator"
+                    android:propertyName="scaleX"
+                    android:startOffset="1250"
+                    android:valueFrom="0"
+                    android:valueTo="-1"
+                    android:valueType="floatType">
+                </objectAnimator>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/decelerate_interpolator"
+                    android:propertyName="translateX"
+                    android:startOffset="1250"
+                    android:valueFrom="144"
+                    android:valueTo="288"
+                    android:valueType="floatType">
+                </objectAnimator>
+
+            </set>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="path_cover_front">
+
+        <aapt:attr
+            name="android:animation">
+
+            <set>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/accelerate_interpolator"
+                    android:propertyName="pathData"
+                    android:startOffset="@integer/animation_splash_offset_04"
+                    android:valueFrom="@string/data_path_splash_cover_back"
+                    android:valueTo="@string/data_path_splash_cover_back_end"
+                    android:valueType="pathType">
+                </objectAnimator>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/decelerate_interpolator"
+                    android:propertyName="pathData"
+                    android:startOffset="1250"
+                    android:valueFrom="@string/data_path_splash_cover_back_end"
+                    android:valueTo="@string/data_path_splash_cover_back"
+                    android:valueType="pathType">
+                </objectAnimator>
+
+            </set>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="path_spine_front">
+
+        <aapt:attr
+            name="android:animation">
+
+            <objectAnimator
+                android:duration="@integer/animation_splash_duration_01"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="fillColor"
+                android:startOffset="1250"
+                android:valueFrom="@color/icon_spine"
+                android:valueTo="@color/icon_cover"
+                android:valueType="colorType">
+            </objectAnimator>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="path_shadow_front">
+
+        <aapt:attr
+            name="android:animation">
+
+            <set>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/accelerate_interpolator"
+                    android:propertyName="pathData"
+                    android:startOffset="@integer/animation_splash_offset_04"
+                    android:valueFrom="@string/data_path_splash_shadow_back"
+                    android:valueTo="@string/data_path_splash_shadow_back_end"
+                    android:valueType="pathType">
+                </objectAnimator>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/decelerate_interpolator"
+                    android:propertyName="pathData"
+                    android:startOffset="1250"
+                    android:valueFrom="@string/data_path_splash_shadow_back_end"
+                    android:valueTo="@string/data_path_splash_shadow_back"
+                    android:valueType="pathType">
+                </objectAnimator>
+
+            </set>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="path_shine_front">
+
+        <aapt:attr
+            name="android:animation">
+
+            <set>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/accelerate_interpolator"
+                    android:propertyName="pathData"
+                    android:startOffset="@integer/animation_splash_offset_04"
+                    android:valueFrom="@string/data_path_splash_spine_back"
+                    android:valueTo="@string/data_path_splash_spine_back_end"
+                    android:valueType="pathType">
+                </objectAnimator>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/decelerate_interpolator"
+                    android:propertyName="pathData"
+                    android:startOffset="1250"
+                    android:valueFrom="@string/data_path_splash_spine_back_end"
+                    android:valueTo="@string/data_path_splash_spine_back"
+                    android:valueType="pathType">
+                </objectAnimator>
+
+            </set>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="group_closure">
+
+        <aapt:attr
+            name="android:animation">
+
+            <set>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_05"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"
+                    android:propertyName="scaleX"
+                    android:startOffset="@integer/animation_splash_offset_04"
+                    android:valueFrom="1"
+                    android:valueTo="0"
+                    android:valueType="floatType">
+                </objectAnimator>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_05"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"
+                    android:propertyName="translateX"
+                    android:startOffset="@integer/animation_splash_offset_04"
+                    android:valueFrom="0"
+                    android:valueTo="360"
+                    android:valueType="floatType">
+                </objectAnimator>
+
+            </set>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="path_strap">
+
+        <aapt:attr
+            name="android:animation">
+
+            <objectAnimator
+                android:duration="@integer/animation_splash_duration_02"
+                android:interpolator="@android:anim/accelerate_interpolator"
+                android:propertyName="pathData"
+                android:startOffset="@integer/animation_splash_offset_02"
+                android:valueFrom="@string/data_path_splash_strap"
+                android:valueTo="@string/data_path_splash_strap_end"
+                android:valueType="pathType">
+            </objectAnimator>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="path_strap_shadow">
+
+        <aapt:attr
+            name="android:animation">
+
+            <objectAnimator
+                android:duration="@integer/animation_splash_duration_02"
+                android:interpolator="@android:anim/accelerate_interpolator"
+                android:propertyName="pathData"
+                android:startOffset="@integer/animation_splash_offset_02"
+                android:valueFrom="@string/data_path_splash_strap_shadow"
+                android:valueTo="@string/data_path_splash_strap_shadow_end"
+                android:valueType="pathType">
+            </objectAnimator>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="path_strap_shine">
+
+        <aapt:attr
+            name="android:animation">
+
+            <objectAnimator
+                android:duration="@integer/animation_splash_duration_02"
+                android:interpolator="@android:anim/accelerate_interpolator"
+                android:propertyName="pathData"
+                android:startOffset="@integer/animation_splash_offset_02"
+                android:valueFrom="@string/data_path_splash_strap_shine"
+                android:valueTo="@string/data_path_splash_strap_shine_end"
+                android:valueType="pathType">
+            </objectAnimator>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="group_page_1_back">
+
+        <aapt:attr
+            name="android:animation">
+
+            <set>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/decelerate_interpolator"
+                    android:propertyName="scaleX"
+                    android:startOffset="@integer/animation_splash_offset_08"
+                    android:valueFrom="0"
+                    android:valueTo="-1"
+                    android:valueType="floatType">
+                </objectAnimator>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/decelerate_interpolator"
+                    android:propertyName="translateX"
+                    android:startOffset="@integer/animation_splash_offset_08"
+                    android:valueFrom="144"
+                    android:valueTo="288"
+                    android:valueType="floatType">
+                </objectAnimator>
+
+            </set>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="path_page_1_back">
+
+        <aapt:attr
+            name="android:animation">
+
+            <set>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/decelerate_interpolator"
+                    android:propertyName="fillColor"
+                    android:startOffset="@integer/animation_splash_offset_08"
+                    android:valueFrom="@color/icon_page_front"
+                    android:valueTo="@color/icon_page_back"
+                    android:valueType="colorType">
+                </objectAnimator>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/decelerate_interpolator"
+                    android:propertyName="pathData"
+                    android:startOffset="@integer/animation_splash_offset_08"
+                    android:valueFrom="@string/data_path_splash_page_front"
+                    android:valueTo="@string/data_path_splash_page_back"
+                    android:valueType="pathType">
+                </objectAnimator>
+
+            </set>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="group_page_1_front">
+
+        <aapt:attr
+            name="android:animation">
+
+            <set>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/accelerate_interpolator"
+                    android:propertyName="scaleX"
+                    android:startOffset="@integer/animation_splash_offset_05"
+                    android:valueFrom="1"
+                    android:valueTo="0"
+                    android:valueType="floatType">
+                </objectAnimator>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/accelerate_interpolator"
+                    android:propertyName="translateX"
+                    android:startOffset="@integer/animation_splash_offset_05"
+                    android:valueFrom="0"
+                    android:valueTo="144"
+                    android:valueType="floatType">
+                </objectAnimator>
+
+            </set>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="path_page_1_front">
+
+        <aapt:attr
+            name="android:animation">
+
+            <set>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/accelerate_interpolator"
+                    android:propertyName="fillColor"
+                    android:startOffset="@integer/animation_splash_offset_05"
+                    android:valueFrom="@color/icon_page_back"
+                    android:valueTo="@color/icon_page_front"
+                    android:valueType="colorType">
+                </objectAnimator>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/accelerate_interpolator"
+                    android:propertyName="pathData"
+                    android:startOffset="@integer/animation_splash_offset_05"
+                    android:valueFrom="@string/data_path_splash_page_back"
+                    android:valueTo="@string/data_path_splash_page_front"
+                    android:valueType="pathType">
+                </objectAnimator>
+
+            </set>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="group_page_2_back">
+
+        <aapt:attr
+            name="android:animation">
+
+            <set>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/decelerate_interpolator"
+                    android:propertyName="scaleX"
+                    android:startOffset="@integer/animation_splash_offset_09"
+                    android:valueFrom="0"
+                    android:valueTo="-1"
+                    android:valueType="floatType">
+                </objectAnimator>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/decelerate_interpolator"
+                    android:propertyName="translateX"
+                    android:startOffset="@integer/animation_splash_offset_09"
+                    android:valueFrom="144"
+                    android:valueTo="288"
+                    android:valueType="floatType">
+                </objectAnimator>
+
+            </set>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="path_page_2_back">
+
+        <aapt:attr
+            name="android:animation">
+
+            <set>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/decelerate_interpolator"
+                    android:propertyName="fillColor"
+                    android:startOffset="@integer/animation_splash_offset_09"
+                    android:valueFrom="@color/icon_page_front"
+                    android:valueTo="@color/icon_page_back"
+                    android:valueType="colorType">
+                </objectAnimator>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/decelerate_interpolator"
+                    android:propertyName="pathData"
+                    android:startOffset="@integer/animation_splash_offset_09"
+                    android:valueFrom="@string/data_path_splash_page_front"
+                    android:valueTo="@string/data_path_splash_page_back"
+                    android:valueType="pathType">
+                </objectAnimator>
+
+            </set>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="group_page_2_front">
+
+        <aapt:attr
+            name="android:animation">
+
+            <set>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/accelerate_interpolator"
+                    android:propertyName="scaleX"
+                    android:startOffset="@integer/animation_splash_offset_06"
+                    android:valueFrom="1"
+                    android:valueTo="0"
+                    android:valueType="floatType">
+                </objectAnimator>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/accelerate_interpolator"
+                    android:propertyName="translateX"
+                    android:startOffset="@integer/animation_splash_offset_06"
+                    android:valueFrom="0"
+                    android:valueTo="144"
+                    android:valueType="floatType">
+                </objectAnimator>
+
+            </set>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="path_page_2_front">
+
+        <aapt:attr
+            name="android:animation">
+
+            <set>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/accelerate_interpolator"
+                    android:propertyName="fillColor"
+                    android:startOffset="@integer/animation_splash_offset_06"
+                    android:valueFrom="@color/icon_page_back"
+                    android:valueTo="@color/icon_page_front"
+                    android:valueType="colorType">
+                </objectAnimator>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/accelerate_interpolator"
+                    android:propertyName="pathData"
+                    android:startOffset="@integer/animation_splash_offset_06"
+                    android:valueFrom="@string/data_path_splash_page_back"
+                    android:valueTo="@string/data_path_splash_page_front"
+                    android:valueType="pathType">
+                </objectAnimator>
+
+            </set>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="group_page_3_back">
+
+        <aapt:attr
+            name="android:animation">
+
+            <set>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/decelerate_interpolator"
+                    android:propertyName="scaleX"
+                    android:startOffset="@integer/animation_splash_offset_10"
+                    android:valueFrom="0"
+                    android:valueTo="-1"
+                    android:valueType="floatType">
+                </objectAnimator>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/decelerate_interpolator"
+                    android:propertyName="translateX"
+                    android:startOffset="@integer/animation_splash_offset_10"
+                    android:valueFrom="144"
+                    android:valueTo="288"
+                    android:valueType="floatType">
+                </objectAnimator>
+
+            </set>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="path_page_3_back">
+
+        <aapt:attr
+            name="android:animation">
+
+            <set>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/decelerate_interpolator"
+                    android:propertyName="fillColor"
+                    android:startOffset="@integer/animation_splash_offset_10"
+                    android:valueFrom="@color/icon_page_front"
+                    android:valueTo="@color/icon_page_back"
+                    android:valueType="colorType">
+                </objectAnimator>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/decelerate_interpolator"
+                    android:propertyName="pathData"
+                    android:startOffset="@integer/animation_splash_offset_10"
+                    android:valueFrom="@string/data_path_splash_page_front"
+                    android:valueTo="@string/data_path_splash_page_back"
+                    android:valueType="pathType">
+                </objectAnimator>
+
+            </set>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="group_page_3_front">
+
+        <aapt:attr
+            name="android:animation">
+
+            <set>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/accelerate_interpolator"
+                    android:propertyName="scaleX"
+                    android:startOffset="@integer/animation_splash_offset_07"
+                    android:valueFrom="1"
+                    android:valueTo="0"
+                    android:valueType="floatType">
+                </objectAnimator>
+
+                <objectAnimator
+                    android:duration="@integer/animation_splash_duration_04"
+                    android:interpolator="@android:anim/accelerate_interpolator"
+                    android:propertyName="translateX"
+                    android:startOffset="@integer/animation_splash_offset_07"
+                    android:valueFrom="0"
+                    android:valueTo="144"
+                    android:valueType="floatType">
+                </objectAnimator>
+
+            </set>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="path_page_3_front">
+
+        <aapt:attr
+            name="android:animation">
+
+            <set>
+
+                <objectAnimator
+                    android:duration="750"
+                    android:interpolator="@android:anim/accelerate_interpolator"
+                    android:propertyName="fillColor"
+                    android:startOffset="@integer/animation_splash_offset_07"
+                    android:valueFrom="@color/icon_page_back"
+                    android:valueTo="@color/icon_page_front"
+                    android:valueType="colorType">
+                </objectAnimator>
+
+                <objectAnimator
+                    android:duration="750"
+                    android:interpolator="@android:anim/accelerate_interpolator"
+                    android:propertyName="pathData"
+                    android:startOffset="@integer/animation_splash_offset_07"
+                    android:valueFrom="@string/data_path_splash_page_back"
+                    android:valueTo="@string/data_path_splash_page_front"
+                    android:valueType="pathType">
+                </objectAnimator>
+
+            </set>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="group_page_4_back">
+
+        <aapt:attr
+            name="android:animation">
+
+            <set>
+
+                <objectAnimator
+                    android:duration="750"
+                    android:interpolator="@android:anim/decelerate_interpolator"
+                    android:propertyName="scaleX"
+                    android:startOffset="@integer/animation_splash_offset_11"
+                    android:valueFrom="0"
+                    android:valueTo="-1"
+                    android:valueType="floatType">
+                </objectAnimator>
+
+                <objectAnimator
+                    android:duration="750"
+                    android:interpolator="@android:anim/decelerate_interpolator"
+                    android:propertyName="translateX"
+                    android:startOffset="@integer/animation_splash_offset_11"
+                    android:valueFrom="144"
+                    android:valueTo="288"
+                    android:valueType="floatType">
+                </objectAnimator>
+
+            </set>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="path_page_4_back">
+
+        <aapt:attr
+            name="android:animation">
+
+            <objectAnimator
+                android:duration="750"
+                android:interpolator="@android:anim/decelerate_interpolator"
+                android:propertyName="pathData"
+                android:startOffset="@integer/animation_splash_offset_11"
+                android:valueFrom="@string/data_path_splash_page_front"
+                android:valueTo="@string/data_path_splash_page_back"
+                android:valueType="pathType">
+            </objectAnimator>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="group_page_4_front">
+
+        <aapt:attr
+            name="android:animation">
+
+            <set>
+
+                <objectAnimator
+                    android:duration="750"
+                    android:interpolator="@android:anim/accelerate_interpolator"
+                    android:propertyName="scaleX"
+                    android:startOffset="1250"
+                    android:valueFrom="1"
+                    android:valueTo="0"
+                    android:valueType="floatType">
+                </objectAnimator>
+
+                <objectAnimator
+                    android:duration="750"
+                    android:interpolator="@android:anim/accelerate_interpolator"
+                    android:propertyName="translateX"
+                    android:startOffset="1250"
+                    android:valueFrom="0"
+                    android:valueTo="144"
+                    android:valueType="floatType">
+                </objectAnimator>
+
+            </set>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="path_page_4_front">
+
+        <aapt:attr
+            name="android:animation">
+
+            <set>
+
+                <objectAnimator
+                    android:duration="749"
+                    android:interpolator="@android:anim/accelerate_interpolator"
+                    android:propertyName="fillColor"
+                    android:startOffset="1251"
+                    android:valueFrom="@color/icon_page_back"
+                    android:valueTo="@color/icon_page_front"
+                    android:valueType="colorType">
+                </objectAnimator>
+
+                <objectAnimator
+                    android:duration="749"
+                    android:interpolator="@android:anim/accelerate_interpolator"
+                    android:propertyName="pathData"
+                    android:startOffset="1251"
+                    android:valueFrom="@string/data_path_splash_page_back"
+                    android:valueTo="@string/data_path_splash_page_front"
+                    android:valueType="pathType">
+                </objectAnimator>
+
+            </set>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="path_page_back">
+
+        <aapt:attr
+            name="android:animation">
+
+            <objectAnimator
+                android:duration="750"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="fillColor"
+                android:startOffset="@integer/animation_splash_offset_10"
+                android:valueFrom="@color/icon_page_back"
+                android:valueTo="@color/icon_page_front"
+                android:valueType="colorType">
+            </objectAnimator>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="path_text_h_front">
+
+        <aapt:attr
+            name="android:animation">
+
+            <objectAnimator
+                android:duration="750"
+                android:interpolator="@android:anim/accelerate_interpolator"
+                android:propertyName="pathData"
+                android:startOffset="@integer/animation_splash_offset_05"
+                android:valueFrom="@string/data_path_splash_text_h"
+                android:valueTo="@string/data_path_splash_text_h_end"
+                android:valueType="pathType">
+            </objectAnimator>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="path_text_e_front">
+
+        <aapt:attr
+            name="android:animation">
+
+            <objectAnimator
+                android:duration="750"
+                android:interpolator="@android:anim/accelerate_interpolator"
+                android:propertyName="pathData"
+                android:startOffset="@integer/animation_splash_offset_06"
+                android:valueFrom="@string/data_path_splash_text_e"
+                android:valueTo="@string/data_path_splash_text_e_end"
+                android:valueType="pathType">
+            </objectAnimator>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="path_text_c_front">
+
+        <aapt:attr
+            name="android:animation">
+
+            <objectAnimator
+                android:duration="750"
+                android:interpolator="@android:anim/accelerate_interpolator"
+                android:propertyName="pathData"
+                android:startOffset="@integer/animation_splash_offset_07"
+                android:valueFrom="@string/data_path_splash_text_c"
+                android:valueTo="@string/data_path_splash_text_c_end"
+                android:valueType="pathType">
+            </objectAnimator>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="path_text_k_front">
+
+        <aapt:attr
+            name="android:animation">
+
+            <objectAnimator
+                android:duration="749"
+                android:interpolator="@android:anim/accelerate_interpolator"
+                android:propertyName="pathData"
+                android:startOffset="1251"
+                android:valueFrom="@string/data_path_splash_text_k"
+                android:valueTo="@string/data_path_splash_text_k_end"
+                android:valueType="pathType">
+            </objectAnimator>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="path_text_o_back">
+
+        <aapt:attr
+            name="android:animation">
+
+            <objectAnimator
+                android:duration="750"
+                android:interpolator="@android:anim/decelerate_interpolator"
+                android:propertyName="pathData"
+                android:startOffset="@integer/animation_splash_offset_08"
+                android:valueFrom="@string/data_path_splash_text_o"
+                android:valueTo="@string/data_path_splash_text_o_end"
+                android:valueType="pathType">
+            </objectAnimator>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="path_text_f_back">
+
+        <aapt:attr
+            name="android:animation">
+
+            <objectAnimator
+                android:duration="750"
+                android:interpolator="@android:anim/decelerate_interpolator"
+                android:propertyName="pathData"
+                android:startOffset="@integer/animation_splash_offset_09"
+                android:valueFrom="@string/data_path_splash_text_f"
+                android:valueTo="@string/data_path_splash_text_f_end"
+                android:valueType="pathType">
+            </objectAnimator>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="path_text_a_back">
+
+        <aapt:attr
+            name="android:animation">
+
+            <objectAnimator
+                android:duration="750"
+                android:interpolator="@android:anim/decelerate_interpolator"
+                android:propertyName="pathData"
+                android:startOffset="@integer/animation_splash_offset_10"
+                android:valueFrom="@string/data_path_splash_text_a"
+                android:valueTo="@string/data_path_splash_text_a_end"
+                android:valueType="pathType">
+            </objectAnimator>
+
+        </aapt:attr>
+
+    </target>
+
+    <target
+        android:name="path_text_story_back">
+
+        <aapt:attr
+            name="android:animation">
+
+            <objectAnimator
+                android:duration="750"
+                android:interpolator="@android:anim/decelerate_interpolator"
+                android:propertyName="pathData"
+                android:startOffset="@integer/animation_splash_offset_11"
+                android:valueFrom="@string/data_path_splash_text_story"
+                android:valueTo="@string/data_path_splash_text_story_end"
+                android:valueType="pathType">
+            </objectAnimator>
+
+        </aapt:attr>
+
+    </target>
+
+</animated-vector>

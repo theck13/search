@@ -4,6 +4,16 @@
 
     <style name="Theme.Storybook" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:windowBackground">@color/background</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/av_splash</item>
+        <item name="android:windowSplashScreenAnimationDuration">@integer/animation_splash_duration_total</item>
+        <item name="android:windowSplashScreenBackground">@color/background</item>
+    </style>
+
+    <style name="Theme.Splash" parent="Theme.SplashScreen">
+        <item name="postSplashScreenTheme">@style/Theme.Storybook</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/av_splash</item>
+        <item name="windowSplashScreenAnimationDuration">@integer/animation_splash_duration_total</item>
+        <item name="windowSplashScreenBackground">@color/background</item>
     </style>
 
 </resources>

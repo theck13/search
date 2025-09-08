@@ -4,4 +4,15 @@
 
     <color name="background">#fffafafa</color>
 
+    <color name="icon_cover">#ff99cc00</color>
+    <color name="icon_page_back">#ffe6e6e6</color>
+    <color name="icon_page_front">#ffffffff</color>
+    <color name="icon_spine">#ff669900</color>
+    <color name="icon_shadow">#ff000000</color>
+    <color name="icon_shine">#ffffffff</color>
+    <color name="icon_snap">#ffffffff</color>
+    <color name="icon_strap">#ff434a4f</color>
+    <color name="icon_text_back">#ffeeeeee</color>
+    <color name="icon_text_front">#ff434a4f</color>
+
 </resources>
