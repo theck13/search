@@ -55,6 +55,17 @@ object Typography {
         )
     }
 
+    object HeadingLarge {
+        val Default = TextStyle(
+            fontFamily = FontFamilyDefault,
+            fontFeatureSettings = FontFeatureSettings,
+            fontSize = Token.FontSizeHeadingLarge,
+            fontWeight = FontWeight(Token.FontWeightHeadingDefault),
+            letterSpacing = Token.LetterSpacingHeadingLarge,
+            lineHeight = Token.LineHeightHeadingLarge,
+        )
+    }
+
     object HeadingMedium {
         val Default = TextStyle(
             fontFamily = FontFamilyDefault,
