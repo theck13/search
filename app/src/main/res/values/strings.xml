@@ -24,4 +24,10 @@
     <string name="examples_search_placeholder_collapsed">Search games</string>
     <string name="examples_search_placeholder_expanded">Enter game or console</string>
 
+    <string name="test_action_back">Back</string>
+    <string name="test_action_clear">Clear</string>
+    <string name="test_action_search">Search</string>
+    <string name="test_placeholder_collapsed">Search</string>
+    <string name="test_placeholder_expanded">Enter search query</string>
+
 </resources>
