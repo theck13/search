@@ -8,10 +8,12 @@ buildscript {
         version_kotlin = "2.2.10"
         version_java = JavaVersion.VERSION_21
         version_name = project.property("version_name")
+        version_test = "0.0.1-alpha11"
     }
 }
 
 plugins {
+    id 'com.android.compose.screenshot' version "$version_test" apply false
     id "com.android.library" version "8.13.0" apply false
     id "org.jetbrains.kotlin.android" version "$version_kotlin" apply false
     id "org.jetbrains.kotlin.plugin.compose" version "$version_kotlin" apply false
