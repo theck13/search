@@ -141,3 +141,25 @@ Search(
     />
 </picture>
 <br>
+
+## Storybook
+
+To showcase the Search component, the Storybook app is released alongside each library version.  In other words, Search library version 1.0.0 corresponds to Storybook app version 1.0.0, which uses Search library version 1.0.0.  See the animation below of the Storybook app using the Search component.
+
+<picture>
+    <source
+        media="(prefers-color-scheme: dark)"
+        srcset="https://github.com/user-attachments/assets/74f94184-a8bb-4f35-8949-dd181e5bc22f"
+    />
+    <source
+        media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+        srcset="https://github.com/user-attachments/assets/94e7b2ba-15a6-42a6-bf5d-eaab92bec5c5"
+    />
+    <img
+        align="center"
+        alt="Storybook App with Search Component Filtering Video Game List"
+        src="https://github.com/user-attachments/assets/74f94184-a8bb-4f35-8949-dd181e5bc22f"
+        style="width:33%;"
+    />
+</picture>
+<br>
