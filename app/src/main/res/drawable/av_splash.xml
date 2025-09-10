@@ -226,7 +226,7 @@
 
                     <path
                         android:name="path_strap"
-                        android:fillColor="@color/icon_text_front"
+                        android:fillColor="@color/icon_strap"
                         android:pathData="@string/data_path_splash_strap">
                     </path>
 
