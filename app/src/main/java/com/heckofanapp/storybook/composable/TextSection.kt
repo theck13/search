@@ -5,10 +5,10 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import com.heckofanapp.search.theme.Color
 import com.heckofanapp.search.PreviewDarkLight
 import com.heckofanapp.search.component.SpacerXs
 import com.heckofanapp.search.component.Typography
+import com.heckofanapp.search.theme.Color
 import com.heckofanapp.storybook.theme.StorybookTheme
 import androidx.compose.ui.graphics.Color as ComposeColor
 

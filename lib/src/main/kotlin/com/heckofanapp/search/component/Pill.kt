@@ -14,9 +14,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
-import com.heckofanapp.search.theme.Color
 import com.heckofanapp.search.PreviewDarkLight
 import com.heckofanapp.search.Token
+import com.heckofanapp.search.theme.Color
 import com.heckofanapp.search.theme.LocalThemeMode
 import com.heckofanapp.search.theme.Theme
 import com.heckofanapp.search.theme.ThemeMode

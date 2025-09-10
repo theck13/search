@@ -23,10 +23,10 @@ import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.Dimension
 import androidx.constraintlayout.compose.Visibility
-import com.heckofanapp.search.theme.Color
 import com.heckofanapp.search.PreviewDarkLight
 import com.heckofanapp.search.Token
 import com.heckofanapp.search.internal.Constant
+import com.heckofanapp.search.theme.Color
 import com.heckofanapp.search.theme.LocalThemeMode
 import com.heckofanapp.search.theme.RippleConfiguration
 import com.heckofanapp.search.theme.ThemeMode

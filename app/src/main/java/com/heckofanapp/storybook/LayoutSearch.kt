@@ -57,7 +57,6 @@ import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import com.heckofanapp.search.theme.Color
 import com.heckofanapp.search.PreviewDarkLightPhoneLandscape
 import com.heckofanapp.search.PreviewDarkLightPhonePortrait
 import com.heckofanapp.search.Search
@@ -71,6 +70,7 @@ import com.heckofanapp.search.component.SpacerSmall
 import com.heckofanapp.search.component.SpacerXl
 import com.heckofanapp.search.component.SpacerXs
 import com.heckofanapp.search.component.Typography
+import com.heckofanapp.search.theme.Color
 import com.heckofanapp.storybook.composable.ListItemGame
 import com.heckofanapp.storybook.composable.TextSection
 import com.heckofanapp.storybook.composable.TextSwitch

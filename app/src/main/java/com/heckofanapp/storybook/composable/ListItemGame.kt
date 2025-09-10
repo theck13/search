@@ -12,7 +12,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextOverflow
-import com.heckofanapp.search.theme.Color
 import com.heckofanapp.search.PreviewDarkLightPhoneLandscape
 import com.heckofanapp.search.PreviewDarkLightPhonePortrait
 import com.heckofanapp.search.Token
@@ -20,6 +19,7 @@ import com.heckofanapp.search.component.Pill
 import com.heckofanapp.search.component.PillEmphasis
 import com.heckofanapp.search.component.SpacerMedium
 import com.heckofanapp.search.component.Typography
+import com.heckofanapp.search.theme.Color
 import com.heckofanapp.storybook.Console
 import com.heckofanapp.storybook.Constant
 import com.heckofanapp.storybook.Game

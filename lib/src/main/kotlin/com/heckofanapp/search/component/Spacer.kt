@@ -5,9 +5,9 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.heckofanapp.search.theme.Color
 import com.heckofanapp.search.PreviewDarkLight
 import com.heckofanapp.search.Token
+import com.heckofanapp.search.theme.Color
 
 /**
  * [Spacer] component using [Token.SpacingHairline] as size.
