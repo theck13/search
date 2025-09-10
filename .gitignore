@@ -5,6 +5,9 @@ build/
 # Local configuration file (sdk path, etc)
 local.properties
 
+# Publish configuration file
+publish.properties
+
 # Log/OS Files
 *.log
 
