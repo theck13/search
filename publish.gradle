@@ -1,0 +1,27 @@
+def publishLibraryModule(String MODULE, String VERSION, String PASSWORD, String USERNAME) {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                artifactId = MODULE
+                from components.release
+                groupId = "com.heckofanapp"
+                version = VERSION
+            }
+        }
+
+        repositories {
+            maven {
+                credentials {
+                    password = PASSWORD
+                    username = USERNAME
+                }
+                name = "GitHubPackages"
+                url = uri("https://maven.pkg.github.com/theck13/search")
+            }
+        }
+    }
+}
+
+ext {
+    publishLibraryModule = this.&publishLibraryModule
+}
