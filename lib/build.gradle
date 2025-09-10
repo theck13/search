@@ -37,6 +37,12 @@ android {
         }
     }
 
+    libraryVariants.configureEach { variant ->
+        variant.outputs.configureEach { output ->
+            output.outputFileName = "${namespace}-${version_code}(${version_name}).aar"
+        }
+    }
+
     experimentalProperties["android.experimental.enableScreenshotTest"] = true
 }
 
