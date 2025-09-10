@@ -2,6 +2,38 @@
 
 A custom input field to use for searching.  Search allows users to enter a keyword or phrase and get relevant information.  It’s an alternative to other forms of filtering and navigation.  Search has two states; collapsed and expanded.
 
+## Setting
+
+To use the Search component, add the library as a dependency to the project build configuration.
+
+### Groovy
+
+To use Groovy, add the following to the `dependencies` block in the `build.gradle` file.
+
+```groovy
+implementation "com.heckofanapp:search:1.0.0"
+```
+
+### Kotlin
+
+To use Kotlin, add the following to the `dependencies` block in the `build.gradle.kts` file.
+
+```kotlin
+implementation("com.heckofanapp:search:1.0.0")
+```
+
+### TOML
+
+To use Kotlin and TOML, add the following to the `dependencies` block in the `build.gradle.kts` file and the `[libraries]` block in the `libs.versions.toml` file.
+
+```kotlin
+implementation(libs.heckofanapp.search)
+```
+
+```toml
+heckofanapp-search = { group = "com.heckofanapp", name = "search", version = "1.0.0" }
+```
+
 ## Specification
 
 | Name                   | Type                                                                                                                            | Default                                                | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
