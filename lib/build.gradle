@@ -1,10 +1,10 @@
 plugins {
-    id "com.android.compose.screenshot"
-    id "com.android.library"
-    id "kotlin-android"
-    id "maven-publish"
-    id "org.jetbrains.kotlin.plugin.compose"
-    id "org.jlleitschuh.gradle.ktlint"
+    id("com.android.compose.screenshot")
+    id("com.android.library")
+    id("kotlin-android")
+    id("maven-publish")
+    id("org.jetbrains.kotlin.plugin.compose")
+    id("org.jlleitschuh.gradle.ktlint")
 }
 
 android {
@@ -59,16 +59,16 @@ afterEvaluate {
 }
 
 dependencies {
-    implementation platform("androidx.compose:compose-bom:$version_compose")
+    implementation platform("androidx.compose:compose-bom:${version_compose}")
 
-    implementation "androidx.compose.animation:animation-graphics"
-    implementation "androidx.compose.material3:material3"
-    implementation "androidx.compose.ui:ui"
-    implementation "androidx.compose.ui:ui-tooling-preview"
-    implementation "androidx.constraintlayout:constraintlayout-compose:1.1.1"
+    implementation("androidx.compose.animation:animation-graphics")
+    implementation("androidx.compose.material3:material3")
+    implementation("androidx.compose.ui:ui")
+    implementation("androidx.compose.ui:ui-tooling-preview")
+    implementation("androidx.constraintlayout:constraintlayout-compose:1.1.1")
 
-    debugImplementation "androidx.compose.ui:ui-tooling"
+    debugImplementation("androidx.compose.ui:ui-tooling")
 
-    screenshotTestImplementation "androidx.compose.ui:ui-tooling"
-    screenshotTestImplementation "com.android.tools.screenshot:screenshot-validation-api:$version_test"
+    screenshotTestImplementation("androidx.compose.ui:ui-tooling")
+    screenshotTestImplementation("com.android.tools.screenshot:screenshot-validation-api:${version_test}")
 }
