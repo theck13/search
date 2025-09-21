@@ -88,9 +88,9 @@ import androidx.compose.ui.graphics.Color as ComposeColor
  * @param isMenu optional [Boolean] to set collapsed icon as menu
  * @param keyboardActions optional [KeyboardActions] to set callbacks for keyboard actions
  * @param keyboardOptions optional [KeyboardOptions] to set keyboard configuration
- * @param onFocusChange required [Unit] callback triggered when search field focus changed
+ * @param onFocusChange required [Unit] callback triggered when search field focus changed with [Boolean] as argument
  * @param onIconClicked required [Unit] callback triggered when icon is clicked
- * @param onQueryChange optional [Unit] callback triggered when query value changed
+ * @param onQueryChange optional [Unit] callback triggered when query value changed with [String] as argument
  * @param placeholder optional [String] in place of query when input is empty
  * @param query optional [String] to set as text in [OutlinedTextField]
  */
