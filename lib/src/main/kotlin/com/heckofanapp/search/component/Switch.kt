@@ -174,7 +174,7 @@ fun Switch(
                         disabledUncheckedTrackColor = Color.borderNeutralWeak,
                         uncheckedBorderColor = Color.backgroundNeutralDisabled,
                         uncheckedThumbColor = Color.backgroundNeutralDisabled.copy(
-                            alpha = 0.40f
+                            alpha = 0.40f,
                         ),
                         uncheckedTrackColor = Color.borderNeutralWeak,
                     ),
