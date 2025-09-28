@@ -18,26 +18,27 @@ import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowDropDown
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.ExposedDropdownMenuAnchorType
 import androidx.compose.material3.ExposedDropdownMenuBox
 import androidx.compose.material3.ExposedDropdownMenuDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.MenuAnchorType
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
-import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
@@ -48,26 +49,28 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.painter.ColorPainter
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import coil.compose.AsyncImage
 import com.heckofanapp.search.PreviewDarkLightPhoneLandscape
 import com.heckofanapp.search.PreviewDarkLightPhonePortrait
 import com.heckofanapp.search.Search
+import com.heckofanapp.search.SearchAvatar
 import com.heckofanapp.search.SearchType
 import com.heckofanapp.search.Token
 import com.heckofanapp.search.component.Spacer2xl
-import com.heckofanapp.search.component.Spacer3xl
 import com.heckofanapp.search.component.SpacerLarge
 import com.heckofanapp.search.component.SpacerMedium
 import com.heckofanapp.search.component.SpacerSmall
-import com.heckofanapp.search.component.SpacerXl
 import com.heckofanapp.search.component.SpacerXs
 import com.heckofanapp.search.component.Typography
 import com.heckofanapp.search.theme.Color
@@ -165,13 +168,16 @@ fun LayoutSearch(
 fun SearchAttributes(
     isPortrait: Boolean,
 ) {
+    val context = LocalContext.current
     val focusManager = LocalFocusManager.current
     val focusRequester = remember { FocusRequester() }
 
     var iconSelected by rememberSaveable { mutableStateOf(SearchType.Search) }
+    var isCheckedAvatar by rememberSaveable { mutableStateOf(false) }
     var isCheckedExpanded by rememberSaveable { mutableStateOf(false) }
     var isCheckedFocused by rememberSaveable { mutableStateOf(false) }
     var query by rememberSaveable { mutableStateOf("") }
+    var toast: Toast? = null
 
     val onCheckedExpandedChange = { checked: Boolean ->
         if (checked) {
@@ -202,6 +208,14 @@ fun SearchAttributes(
         isCheckedFocused = false
     }
 
+    TextSection(
+        modifier = Modifier.padding(
+            horizontal = Token.SpacingMedium,
+        ),
+        textSubtitle = stringResource(R.string.attributes_search_description),
+        textTitle = stringResource(R.string.attributes),
+    )
+
     Row(
         modifier = Modifier.fillMaxWidth(),
     ) {
@@ -211,14 +225,6 @@ fun SearchAttributes(
             ),
             horizontalAlignment = if (isPortrait) Alignment.CenterHorizontally else Alignment.Start,
         ) {
-            TextSection(
-                modifier = Modifier.padding(
-                    horizontal = Token.SpacingMedium,
-                ),
-                textSubtitle = stringResource(R.string.attributes_search_description),
-                textTitle = stringResource(R.string.attributes),
-            )
-
             SpacerLarge()
 
             Box(
@@ -227,6 +233,38 @@ fun SearchAttributes(
                 )
             ) {
                 Search(
+                    avatar =
+                        if (isCheckedAvatar) {
+                            SearchAvatar(
+                                description = stringResource(R.string.content_description_account_avatar),
+                                image = {
+                                    AsyncImage(
+                                        modifier = Modifier.clip(
+                                            shape = CircleShape,
+                                        ),
+                                        model = "https://heckofanapp.com/wp-content/uploads/2025/09/github_person.png",
+                                        contentDescription = null,
+                                        error = ColorPainter(
+                                            color = Color.textIconNeutral,
+                                        ),
+                                        placeholder = ColorPainter(
+                                            color = Color.textIconNeutralWeak,
+                                        ),
+                                    )
+                                },
+                                onClick = {
+                                    toast?.cancel()
+                                    toast = Toast.makeText(
+                                        context,
+                                        context.getString(R.string.examples_toast_avatar_clicked),
+                                        Toast.LENGTH_SHORT,
+                                    )
+                                    toast?.show()
+                                },
+                            )
+                        } else {
+                            null
+                        },
                     descriptionClear = stringResource(R.string.action_clear),
                     descriptionCollapsed = stringResource(iconSelected.string),
                     descriptionExpanded = stringResource(R.string.action_back),
@@ -263,15 +301,28 @@ fun SearchAttributes(
 
                 SearchAttributesOptions(
                     iconSelected = iconSelected,
+                    isCheckedAvatar = isCheckedAvatar,
                     isCheckedExpanded = isCheckedExpanded,
                     isCheckedFocused = isCheckedFocused,
                     isPortrait = isPortrait,
+                    onCheckedAvatarChange = { checked ->
+                        isCheckedAvatar = checked
+                    },
                     onCheckedExpandedChange = { checked ->
                         onCheckedExpandedChange(checked)
                     },
                     onCheckedFocusedChange = { checked ->
                         onCheckedFocusedChange(checked)
                     },
+                    onIconSelected = { selected ->
+                        iconSelected = selected
+                    },
+                )
+            } else {
+                SpacerMedium()
+
+                SearchAttributesDropdown(
+                    iconSelected = iconSelected,
                     onIconSelected = { selected ->
                         iconSelected = selected
                     },
@@ -291,9 +342,13 @@ fun SearchAttributes(
             ) {
                 SearchAttributesOptions(
                     iconSelected = iconSelected,
+                    isCheckedAvatar = isCheckedAvatar,
                     isCheckedExpanded = isCheckedExpanded,
                     isCheckedFocused = isCheckedFocused,
                     isPortrait = isPortrait,
+                    onCheckedAvatarChange = { checked ->
+                        isCheckedAvatar = checked
+                    },
                     onCheckedExpandedChange = { checked ->
                         onCheckedExpandedChange(checked)
                     },
@@ -312,7 +367,6 @@ fun SearchAttributes(
 @Composable
 fun SearchAttributesDropdown(
     iconSelected: SearchType,
-    isPortrait: Boolean,
     onIconSelected: (SearchType) -> Unit,
 ) {
     var isExpandedDropdown by rememberSaveable { mutableStateOf(false) }
@@ -321,18 +375,6 @@ fun SearchAttributesDropdown(
         label = "Degrees",
         targetValue = if (isExpandedDropdown) 180f else 0f,
     )
-    val modifier =
-        if (isPortrait) {
-            Modifier.width(
-                width = TextFieldDefaults.MinWidth,
-            )
-        } else {
-            Modifier
-                .fillMaxWidth()
-                .padding(
-                    horizontal = Token.SpacingMedium,
-                )
-        }
 
     ExposedDropdownMenuBox(
         expanded = isExpandedDropdown,
@@ -341,9 +383,14 @@ fun SearchAttributesDropdown(
         },
     ) {
         TextField(
-            modifier = modifier.menuAnchor(
-                type = MenuAnchorType.PrimaryNotEditable,
-            ),
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(
+                    horizontal = Token.SpacingMedium,
+                )
+                .menuAnchor(
+                    type = ExposedDropdownMenuAnchorType.PrimaryNotEditable,
+                ),
             colors = ExposedDropdownMenuDefaults.textFieldColors(
                 disabledContainerColor = Color.backgroundNeutralHigh,
                 disabledLabelColor = Color.textIconDisabled,
@@ -405,9 +452,11 @@ fun SearchAttributesDropdown(
 @Composable
 fun SearchAttributesOptions(
     iconSelected: SearchType,
+    isCheckedAvatar: Boolean,
     isCheckedExpanded: Boolean,
     isCheckedFocused: Boolean,
     isPortrait: Boolean,
+    onCheckedAvatarChange: (Boolean) -> Unit,
     onCheckedExpandedChange: (Boolean) -> Unit,
     onCheckedFocusedChange: (Boolean) -> Unit,
     onIconSelected: (SearchType) -> Unit,
@@ -416,6 +465,25 @@ fun SearchAttributesOptions(
         modifier = Modifier.fillMaxWidth(),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
+        if (isPortrait.not()) {
+            Spacer(
+                modifier = Modifier.height(
+                    height = 28.dp,
+                ),
+            )
+        }
+
+        TextSwitch(
+            isChecked = isCheckedAvatar,
+            onCheckedChange = { checked ->
+                onCheckedAvatarChange(checked)
+            },
+            padding = PaddingValues(
+                horizontal = Token.SpacingMedium,
+            ),
+            text = stringResource(R.string.attributes_search_avatar),
+        )
+
         TextSwitch(
             isChecked = isCheckedExpanded,
             onCheckedChange = { checked ->
@@ -444,13 +512,14 @@ fun SearchAttributesOptions(
             SpacerSmall()
         }
 
-        SearchAttributesDropdown(
-            iconSelected = iconSelected,
-            isPortrait = isPortrait,
-            onIconSelected = { selected ->
-                onIconSelected(selected)
-            },
-        )
+        if (isPortrait) {
+            SearchAttributesDropdown(
+                iconSelected = iconSelected,
+                onIconSelected = { selected ->
+                    onIconSelected(selected)
+                },
+            )
+        }
     }
 }
 
@@ -494,6 +563,14 @@ fun SearchExamples(
         isExpanded = false
     }
 
+    TextSection(
+        modifier = Modifier.padding(
+            horizontal = Token.SpacingMedium,
+        ),
+        textSubtitle = stringResource(R.string.examples_search_description),
+        textTitle = stringResource(R.string.examples),
+    )
+
     Row(
         modifier = Modifier.fillMaxWidth(),
     ) {
@@ -503,14 +580,6 @@ fun SearchExamples(
             ),
             horizontalAlignment = if (isPortrait) Alignment.CenterHorizontally else Alignment.Start,
         ) {
-            TextSection(
-                modifier = Modifier.padding(
-                    horizontal = Token.SpacingMedium,
-                ),
-                textSubtitle = stringResource(R.string.examples_search_description),
-                textTitle = stringResource(R.string.examples),
-            )
-
             SpacerLarge()
 
             Box(
@@ -571,9 +640,13 @@ fun SearchExamples(
                         weight = Constant.WeightColumnEnd,
                     ),
             ) {
-                // Spacer3xl and SpacerXl are used to align list with search field in landscape.
-                Spacer3xl()
-                SpacerXl()
+                Spacer(
+                    modifier = Modifier.height(
+                        height =
+                            Token.SpacingLarge + // Top padding
+                            Token.SpacingLarge / 2, // Half difference between search field and list item heights
+                    ),
+                )
 
                 SearchExamplesComponentList(
                     query = query,
@@ -615,6 +688,19 @@ private fun SearchExamplesComponentList(
                 ) ||
                 game.title.matchStringWithQueryIgnoringCase(
                     query = query,
+                ) ||
+                (
+                    query.contains(
+                        ignoreCase = true,
+                        other = "\u0063\u0068\u0065\u0061\u0074",
+                    ) &&
+                    when (game) {
+                        Game.Doom,
+                        Game.GoldenEye007,
+                        Game.SpaceInvaders,
+                        Game.SuperMarioBrothers -> true
+                        else -> false
+                    }
                 ),
         )
     }

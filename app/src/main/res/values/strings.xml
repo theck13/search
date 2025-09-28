@@ -9,7 +9,8 @@
     <string name="action_search">Search</string>
 
     <string name="attributes">Attributes</string>
-    <string name="attributes_search_description">Tap the search field, toggle the switches, and select an icon to see the search field change states.</string>
+    <string name="attributes_search_description">Tap the search field, tap the icons, toggle the switches, and select an icon from the dropdown menu to see the search field change states.</string>
+    <string name="attributes_search_avatar">Avatar</string>
     <string name="attributes_search_expanded">Expanded</string>
     <string name="attributes_search_focused">Focused</string>
     <string name="attributes_search_icon_dropdown">Icon</string>
@@ -19,11 +20,15 @@
     <string name="components_search">Search</string>
     <string name="components_search_description">Search allows users to enter a keyword or phrase and get relevant information.  It’s an alternative to other forms of filtering and navigation.  Search has two states; collapsed and expanded.</string>
 
+    <string name="content_description_account_avatar">Account Avatar</string>
+
     <string name="examples">Examples</string>
-    <string name="examples_search_description">Tap the search field below and enter text to see search in action.</string>
+    <string name="examples_search_description">Tap the field and enter text below to see search in action.</string>
     <string name="examples_search_placeholder_collapsed">Search games</string>
     <string name="examples_search_placeholder_expanded">Enter game or console</string>
+    <string name="examples_toast_avatar_clicked">Clicked avatar</string>
 
+    <string name="test_action_avatar">Avatar</string>
     <string name="test_action_back">Back</string>
     <string name="test_action_clear">Clear</string>
     <string name="test_action_search">Search</string>
