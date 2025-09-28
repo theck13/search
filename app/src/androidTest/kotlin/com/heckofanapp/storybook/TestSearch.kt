@@ -133,6 +133,55 @@ class TestSearch {
     }
 
     @Test
+    fun hasClearAfterInsertQuery() {
+        val field = getField()
+        assert(isExpanded.not())
+        assert(isFocused.not())
+        field.assertIsNotFocused()
+        field.performClick()
+        assert(isExpanded)
+        assert(isFocused)
+        field.assertIsFocused()
+
+        val clear = getClear()
+        val text = "test"
+        field.assertTextEquals("")
+        clear.assertDoesNotExist()
+        field.performTextInput(text)
+        field.assertTextEquals(text)
+        clear.assertExists()
+    }
+
+    @Test
+    fun hasClearAfterInsertQueryAndCollapse() {
+        val field = getField()
+        assert(isExpanded.not())
+        assert(isFocused.not())
+        field.assertIsNotFocused()
+        field.performClick()
+        assert(isExpanded)
+        assert(isFocused)
+        field.assertIsFocused()
+
+        val clear = getClear()
+        val text = "test"
+        clear.assertDoesNotExist()
+        field.assertTextEquals("")
+        field.performTextInput(text)
+        field.assertTextEquals(text)
+        clear.assertExists()
+
+        val back = getBack()
+        back.performClick()
+
+        val query = getQuery(
+            text = text,
+        )
+        query.assertExists()
+        clear.assertExists()
+    }
+
+    @Test
     fun hasNoNewlineAfterInsertNewline() {
         val field = getField()
         val newline = "\n"
@@ -376,6 +425,12 @@ class TestSearch {
     private fun getBack(): SemanticsNodeInteraction {
         return rule.onNodeWithContentDescription(
             label = descriptionBack,
+        )
+    }
+
+    private fun getClear(): SemanticsNodeInteraction {
+        return rule.onNodeWithContentDescription(
+            label = descriptionClear,
         )
     }
 
