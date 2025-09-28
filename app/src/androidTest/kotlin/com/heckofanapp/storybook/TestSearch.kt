@@ -235,12 +235,10 @@ class TestSearch {
         field.performTextInput(text)
         field.assertTextEquals(text)
 
-        val icon = rule.onNodeWithContentDescription(
-            label = descriptionBack,
-        )
-        icon.performClick()
+        val back = getBack()
+        back.performClick()
 
-        val query = rule.onNodeWithText(
+        val query = getQuery(
             text = text,
         )
         query.assertExists()
@@ -289,12 +287,10 @@ class TestSearch {
         field.performTextInput(text)
         field.assertTextEquals(text)
 
-        val icon = rule.onNodeWithContentDescription(
-            label = descriptionBack,
-        )
-        icon.performClick()
+        val back = getBack()
+        back.performClick()
 
-        val query = rule.onNodeWithText(
+        val query = getQuery(
             text = text,
         )
         query.assertExists()
