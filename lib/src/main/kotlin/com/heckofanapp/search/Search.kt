@@ -23,6 +23,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.relocation.BringIntoViewRequester
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
@@ -42,6 +43,7 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.focus.FocusManager
 import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.focus.focusRequester
@@ -49,6 +51,7 @@ import androidx.compose.ui.focus.onFocusChanged
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.painter.ColorPainter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.res.vectorResource
@@ -77,6 +80,7 @@ import androidx.compose.ui.graphics.Color as ComposeColor
  * [MaterialCard] with [MaterialIconButton]s and [OutlinedTextField] to use for searching.
  *
  * @param modifier optional [Modifier] to apply to [MaterialCard]
+ * @param avatar optional [SearchAvatar] to set as image content at end of layout
  * @param colorCollapsed optional [Color] to set background when search field is collapsed
  * @param colorExpanded optional [Color] to set background when search field is expanded
  * @param descriptionClear required [String] to describe clear icon for accessibility services
@@ -97,6 +101,7 @@ import androidx.compose.ui.graphics.Color as ComposeColor
 @Composable
 fun Search(
     modifier: Modifier = Modifier,
+    avatar: SearchAvatar? = null,
     colorCollapsed: ComposeColor = Color.backgroundNeutralHigh,
     colorExpanded: ComposeColor = Color.backgroundNeutralHigh,
     descriptionClear: String,
@@ -280,39 +285,71 @@ fun Search(
                 singleLine = true,
                 textStyle = Typography.BodyLarge.Default,
                 trailingIcon = {
-                    AnimatedVisibility(
-                        content = {
+                    Row {
+                        AnimatedVisibility(
+                            content = {
+                                TooltipBox(
+                                    position = TooltipBoxPosition.Below,
+                                    text = descriptionClear,
+                                ) {
+                                    MaterialIconButton(
+                                        modifier = Modifier.size(
+                                            size = Token.TouchTargetMinimum,
+                                        ),
+                                        onClick = {
+                                            setQueryChange(
+                                                TextFieldValue(
+                                                    text = "",
+                                                )
+                                            )
+                                        },
+                                    ) {
+                                        Icon(
+                                            modifier = Modifier.size(
+                                                size = Token.IconSizeMedium,
+                                            ),
+                                            contentDescription = descriptionClear,
+                                            imageVector = ImageVector.vectorResource(R.drawable.ic_clear_24),
+                                            tint = Color.textIconNeutral,
+                                        )
+                                    }
+                                }
+                            },
+                            enter = fadeIn(),
+                            exit = fadeOut(),
+                            visible = text.text.isNotEmpty(),
+                        )
+
+                        avatar?.let {
                             TooltipBox(
                                 position = TooltipBoxPosition.Below,
-                                text = descriptionClear,
+                                text = avatar.description,
                             ) {
                                 MaterialIconButton(
                                     modifier = Modifier.size(
                                         size = Token.TouchTargetMinimum,
                                     ),
                                     onClick = {
-                                        setQueryChange(
-                                            TextFieldValue(
-                                                text = "",
-                                            )
-                                        )
+                                        avatar.onClick()
                                     },
                                 ) {
-                                    Icon(
-                                        modifier = Modifier.size(
-                                            size = Token.IconSizeMedium,
-                                        ),
-                                        contentDescription = descriptionClear,
-                                        imageVector = ImageVector.vectorResource(R.drawable.ic_clear_24),
-                                        tint = Color.textIconNeutral,
-                                    )
+                                    Box(
+                                        modifier = Modifier
+                                            .size(
+                                                size = 32.dp,
+                                            )
+                                            .semantics {
+                                                contentDescription = avatar.description
+                                            },
+                                    ) {
+                                        avatar.image()
+                                    }
+
+                                    Spacer2xs()
                                 }
                             }
-                        },
-                        enter = fadeIn(),
-                        exit = fadeOut(),
-                        visible = text.text.isNotEmpty(),
-                    )
+                        }
+                    }
                 },
                 value = text,
             )
@@ -327,6 +364,12 @@ fun Search(
         }
     }
 }
+
+data class SearchAvatar(
+    val description: String,
+    val image: @Composable () -> Unit,
+    val onClick: () -> Unit,
+)
 
 enum class SearchType(
     @param:DrawableRes val drawable: Int,
@@ -369,8 +412,40 @@ fun PreviewSearch(
             )
         }
     val list = listOf(
-        Triple("Default", SolidColor(Color.backgroundTransparent), Color.backgroundNeutralHigh to Color.backgroundNeutralHigh),
-        Triple("Custom", gradient, Color.backgroundTranslucent to Color.backgroundTransparent),
+        Triple(
+            "Default",
+            null,
+            Triple(
+                SolidColor(Color.backgroundTransparent),
+                Color.backgroundNeutralHigh,
+                Color.backgroundNeutralHigh,
+            ),
+        ),
+        Triple(
+            "Custom",
+            SearchAvatar(
+                description = "",
+                image = {
+                    Image(
+                        modifier = Modifier.clip(
+                            shape = CircleShape,
+                        ).size(
+                            size = 32.dp,
+                        ),
+                        contentDescription = "",
+                        painter = ColorPainter(
+                            color = Color.textIconNeutral,
+                        ),
+                    )
+                },
+                onClick = {},
+            ),
+            Triple(
+                gradient,
+                Color.backgroundTranslucent,
+                Color.backgroundTransparent,
+            ),
+        ),
     )
 
     Row(
@@ -428,7 +503,7 @@ fun PreviewSearch(
 fun PreviewSearchBox(
     isExpanded: Boolean,
     isMenu: Boolean,
-    item: Triple<String, Brush, Pair<ComposeColor, ComposeColor>>,
+    item: Triple<String, SearchAvatar?, Triple<Brush, ComposeColor, ComposeColor>>,
     placeholder: String,
     query: String,
     width: Dp,
@@ -447,7 +522,7 @@ fun PreviewSearchBox(
     Box(
         modifier = Modifier
             .background(
-                brush = item.second,
+                brush = item.third.first,
             )
             .padding(
                 horizontal = paddingMediumToZero,
@@ -455,8 +530,9 @@ fun PreviewSearchBox(
     ) {
         Search(
             modifier = modifier,
-            colorCollapsed = item.third.first,
-            colorExpanded = item.third.second,
+            avatar = item.second,
+            colorCollapsed = item.third.second,
+            colorExpanded = item.third.third,
             descriptionClear = descriptionClear,
             descriptionCollapsed = descriptionCollapsed,
             descriptionExpanded = descriptionExpanded,
