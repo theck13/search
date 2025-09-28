@@ -28,6 +28,7 @@ import androidx.compose.ui.test.performTextInput
 import androidx.compose.ui.test.performTouchInput
 import androidx.compose.ui.test.requestFocus
 import com.heckofanapp.search.Search
+import com.heckofanapp.search.SearchAvatar
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
@@ -42,6 +43,7 @@ class TestSearch {
     var isFocused by mutableStateOf(false)
     var query by mutableStateOf("")
 
+    lateinit var descriptionAvatar: String
     lateinit var descriptionBack: String
     lateinit var descriptionClear: String
     lateinit var descriptionSearch: String
@@ -51,6 +53,7 @@ class TestSearch {
 
     @Before
     fun before() {
+        descriptionAvatar = rule.activity.getString(R.string.test_action_avatar)
         descriptionBack = rule.activity.getString(R.string.test_action_back)
         descriptionClear = rule.activity.getString(R.string.test_action_clear)
         descriptionSearch = rule.activity.getString(R.string.test_action_search)
@@ -62,6 +65,11 @@ class TestSearch {
 
             Search(
                 modifier = Modifier.testTag(TAG),
+                avatar = SearchAvatar(
+                    description = descriptionAvatar,
+                    image = {},
+                    onClick = {},
+                ),
                 descriptionClear = descriptionClear,
                 descriptionCollapsed = descriptionSearch,
                 descriptionExpanded = descriptionBack,
@@ -91,6 +99,37 @@ class TestSearch {
                 query = query,
             )
         }
+    }
+
+    @Test
+    fun hasAvatar() {
+        val avatar = rule.onNodeWithContentDescription(
+            label = descriptionAvatar,
+        )
+        val field = getField()
+        assert(isExpanded.not())
+        assert(isFocused.not())
+        field.assertIsNotFocused()
+        avatar.assertExists()
+        field.performClick()
+        assert(isExpanded)
+        assert(isFocused)
+        field.assertIsFocused()
+        avatar.assertExists()
+
+        val text = "test"
+        field.assertTextEquals("")
+        field.performTextInput(text)
+        field.assertTextEquals(text)
+        avatar.assertExists()
+
+        val back = getBack()
+        back.performClick()
+        avatar.assertExists()
+        avatar.performTouchInput {
+            longClick()
+        }
+        avatar.assertExists()
     }
 
     @Test
@@ -334,6 +373,11 @@ class TestSearch {
                 matcher = hasSetTextAction(),
             )
     }
+    private fun getBack(): SemanticsNodeInteraction {
+        return rule.onNodeWithContentDescription(
+            label = descriptionBack,
+        )
+    }
 
     private fun getIcon(): SemanticsNodeInteraction {
         return getInput().onChildAt(
@@ -344,6 +388,14 @@ class TestSearch {
     private fun getInput(): SemanticsNodeInteraction {
         return getField().onChildAt(
             index = 0,
+        )
+    }
+
+    private fun getQuery(
+        text: String,
+    ): SemanticsNodeInteraction {
+        return rule.onNodeWithText(
+            text = text,
         )
     }
 }
