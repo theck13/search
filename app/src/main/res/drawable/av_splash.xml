@@ -267,7 +267,7 @@
             <set>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_06"
+                    android:duration="@integer/animation_splash_duration_05"
                     android:interpolator="@android:interpolator/fast_out_slow_in"
                     android:propertyName="pivotX"
                     android:startOffset="@integer/animation_splash_offset_03"
@@ -277,7 +277,7 @@
                 </objectAnimator>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_06"
+                    android:duration="@integer/animation_splash_duration_05"
                     android:interpolator="@android:interpolator/fast_out_slow_in"
                     android:propertyName="pivotY"
                     android:startOffset="@integer/animation_splash_offset_03"
@@ -287,7 +287,7 @@
                 </objectAnimator>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_06"
+                    android:duration="@integer/animation_splash_duration_05"
                     android:interpolator="@android:interpolator/linear_out_slow_in"
                     android:propertyName="scaleX"
                     android:startOffset="@integer/animation_splash_offset_03"
@@ -297,7 +297,7 @@
                 </objectAnimator>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_06"
+                    android:duration="@integer/animation_splash_duration_05"
                     android:interpolator="@android:interpolator/fast_out_slow_in"
                     android:propertyName="scaleY"
                     android:startOffset="@integer/animation_splash_offset_03"
@@ -319,7 +319,7 @@
             name="android:animation">
 
             <objectAnimator
-                android:duration="@integer/animation_splash_duration_05"
+                android:duration="@integer/animation_splash_duration_04"
                 android:interpolator="@android:interpolator/fast_out_slow_in"
                 android:propertyName="translateX"
                 android:startOffset="@integer/animation_splash_offset_04"
@@ -341,7 +341,7 @@
             <set>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/accelerate_interpolator"
                     android:propertyName="scaleX"
                     android:startOffset="@integer/animation_splash_offset_04"
@@ -351,7 +351,7 @@
                 </objectAnimator>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/accelerate_interpolator"
                     android:propertyName="translateX"
                     android:startOffset="@integer/animation_splash_offset_04"
@@ -361,7 +361,7 @@
                 </objectAnimator>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/decelerate_interpolator"
                     android:propertyName="scaleX"
                     android:startOffset="1250"
@@ -371,7 +371,7 @@
                 </objectAnimator>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/decelerate_interpolator"
                     android:propertyName="translateX"
                     android:startOffset="1250"
@@ -395,7 +395,7 @@
             <set>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/accelerate_interpolator"
                     android:propertyName="pathData"
                     android:startOffset="@integer/animation_splash_offset_04"
@@ -405,7 +405,7 @@
                 </objectAnimator>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/decelerate_interpolator"
                     android:propertyName="pathData"
                     android:startOffset="1250"
@@ -449,7 +449,7 @@
             <set>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/accelerate_interpolator"
                     android:propertyName="pathData"
                     android:startOffset="@integer/animation_splash_offset_04"
@@ -459,7 +459,7 @@
                 </objectAnimator>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/decelerate_interpolator"
                     android:propertyName="pathData"
                     android:startOffset="1250"
@@ -483,7 +483,7 @@
             <set>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/accelerate_interpolator"
                     android:propertyName="pathData"
                     android:startOffset="@integer/animation_splash_offset_04"
@@ -493,7 +493,7 @@
                 </objectAnimator>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/decelerate_interpolator"
                     android:propertyName="pathData"
                     android:startOffset="1250"
@@ -517,7 +517,7 @@
             <set>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_05"
+                    android:duration="@integer/animation_splash_duration_04"
                     android:interpolator="@android:interpolator/fast_out_slow_in"
                     android:propertyName="scaleX"
                     android:startOffset="@integer/animation_splash_offset_04"
@@ -527,7 +527,7 @@
                 </objectAnimator>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_05"
+                    android:duration="@integer/animation_splash_duration_04"
                     android:interpolator="@android:interpolator/fast_out_slow_in"
                     android:propertyName="translateX"
                     android:startOffset="@integer/animation_splash_offset_04"
@@ -611,7 +611,7 @@
             <set>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/decelerate_interpolator"
                     android:propertyName="scaleX"
                     android:startOffset="@integer/animation_splash_offset_08"
@@ -621,7 +621,7 @@
                 </objectAnimator>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/decelerate_interpolator"
                     android:propertyName="translateX"
                     android:startOffset="@integer/animation_splash_offset_08"
@@ -645,7 +645,7 @@
             <set>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/decelerate_interpolator"
                     android:propertyName="fillColor"
                     android:startOffset="@integer/animation_splash_offset_08"
@@ -655,7 +655,7 @@
                 </objectAnimator>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/decelerate_interpolator"
                     android:propertyName="pathData"
                     android:startOffset="@integer/animation_splash_offset_08"
@@ -679,7 +679,7 @@
             <set>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/accelerate_interpolator"
                     android:propertyName="scaleX"
                     android:startOffset="@integer/animation_splash_offset_05"
@@ -689,7 +689,7 @@
                 </objectAnimator>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/accelerate_interpolator"
                     android:propertyName="translateX"
                     android:startOffset="@integer/animation_splash_offset_05"
@@ -713,7 +713,7 @@
             <set>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/accelerate_interpolator"
                     android:propertyName="fillColor"
                     android:startOffset="@integer/animation_splash_offset_05"
@@ -723,7 +723,7 @@
                 </objectAnimator>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/accelerate_interpolator"
                     android:propertyName="pathData"
                     android:startOffset="@integer/animation_splash_offset_05"
@@ -747,7 +747,7 @@
             <set>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/decelerate_interpolator"
                     android:propertyName="scaleX"
                     android:startOffset="@integer/animation_splash_offset_09"
@@ -757,7 +757,7 @@
                 </objectAnimator>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/decelerate_interpolator"
                     android:propertyName="translateX"
                     android:startOffset="@integer/animation_splash_offset_09"
@@ -781,7 +781,7 @@
             <set>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/decelerate_interpolator"
                     android:propertyName="fillColor"
                     android:startOffset="@integer/animation_splash_offset_09"
@@ -791,7 +791,7 @@
                 </objectAnimator>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/decelerate_interpolator"
                     android:propertyName="pathData"
                     android:startOffset="@integer/animation_splash_offset_09"
@@ -815,7 +815,7 @@
             <set>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/accelerate_interpolator"
                     android:propertyName="scaleX"
                     android:startOffset="@integer/animation_splash_offset_06"
@@ -825,7 +825,7 @@
                 </objectAnimator>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/accelerate_interpolator"
                     android:propertyName="translateX"
                     android:startOffset="@integer/animation_splash_offset_06"
@@ -849,7 +849,7 @@
             <set>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/accelerate_interpolator"
                     android:propertyName="fillColor"
                     android:startOffset="@integer/animation_splash_offset_06"
@@ -859,7 +859,7 @@
                 </objectAnimator>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/accelerate_interpolator"
                     android:propertyName="pathData"
                     android:startOffset="@integer/animation_splash_offset_06"
@@ -883,7 +883,7 @@
             <set>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/decelerate_interpolator"
                     android:propertyName="scaleX"
                     android:startOffset="@integer/animation_splash_offset_10"
@@ -893,7 +893,7 @@
                 </objectAnimator>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/decelerate_interpolator"
                     android:propertyName="translateX"
                     android:startOffset="@integer/animation_splash_offset_10"
@@ -917,7 +917,7 @@
             <set>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/decelerate_interpolator"
                     android:propertyName="fillColor"
                     android:startOffset="@integer/animation_splash_offset_10"
@@ -927,7 +927,7 @@
                 </objectAnimator>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/decelerate_interpolator"
                     android:propertyName="pathData"
                     android:startOffset="@integer/animation_splash_offset_10"
@@ -951,7 +951,7 @@
             <set>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/accelerate_interpolator"
                     android:propertyName="scaleX"
                     android:startOffset="@integer/animation_splash_offset_07"
@@ -961,7 +961,7 @@
                 </objectAnimator>
 
                 <objectAnimator
-                    android:duration="@integer/animation_splash_duration_04"
+                    android:duration="@integer/animation_splash_duration_03"
                     android:interpolator="@android:anim/accelerate_interpolator"
                     android:propertyName="translateX"
                     android:startOffset="@integer/animation_splash_offset_07"

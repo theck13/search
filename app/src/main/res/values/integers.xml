@@ -4,10 +4,9 @@
 
     <integer name="animation_splash_duration_01">1</integer>
     <integer name="animation_splash_duration_02">300</integer>
-    <integer name="animation_splash_duration_03">400</integer>
-    <integer name="animation_splash_duration_04">750</integer>
-    <integer name="animation_splash_duration_05">1500</integer>
-    <integer name="animation_splash_duration_06">2600</integer>
+    <integer name="animation_splash_duration_03">750</integer>
+    <integer name="animation_splash_duration_04">1500</integer>
+    <integer name="animation_splash_duration_05">2600</integer>
     <integer name="animation_splash_duration_total">3000</integer>
     <integer name="animation_splash_offset_01">200</integer>
     <integer name="animation_splash_offset_02">300</integer>
