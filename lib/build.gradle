@@ -31,6 +31,10 @@ android {
         verbose = true
     }
 
+    lint {
+        baseline = file("lint_baseline.xml")
+    }
+
     publishing {
         singleVariant("release") {
             withSourcesJar()
