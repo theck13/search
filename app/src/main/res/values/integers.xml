@@ -8,16 +8,15 @@
     <integer name="animation_splash_duration_04">1500</integer>
     <integer name="animation_splash_duration_05">2600</integer>
     <integer name="animation_splash_duration_total">3000</integer>
-    <integer name="animation_splash_offset_01">200</integer>
-    <integer name="animation_splash_offset_02">300</integer>
-    <integer name="animation_splash_offset_03">400</integer>
-    <integer name="animation_splash_offset_04">500</integer>
-    <integer name="animation_splash_offset_05">700</integer>
-    <integer name="animation_splash_offset_06">900</integer>
-    <integer name="animation_splash_offset_07">1100</integer>
-    <integer name="animation_splash_offset_08">1450</integer>
-    <integer name="animation_splash_offset_09">1650</integer>
-    <integer name="animation_splash_offset_10">1850</integer>
-    <integer name="animation_splash_offset_11">2050</integer>
+    <integer name="animation_splash_offset_01">300</integer>
+    <integer name="animation_splash_offset_02">400</integer>
+    <integer name="animation_splash_offset_03">500</integer>
+    <integer name="animation_splash_offset_04">700</integer>
+    <integer name="animation_splash_offset_05">900</integer>
+    <integer name="animation_splash_offset_06">1100</integer>
+    <integer name="animation_splash_offset_07">1450</integer>
+    <integer name="animation_splash_offset_08">1650</integer>
+    <integer name="animation_splash_offset_09">1850</integer>
+    <integer name="animation_splash_offset_10">2050</integer>
 
 </resources>
