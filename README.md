@@ -11,7 +11,7 @@ To use the Search component, add the library as a dependency to the project buil
 To use Groovy, add the following to the `dependencies` block in the `build.gradle` file.
 
 ```groovy
-implementation "com.heckofanapp:search:1.1.0"
+implementation "com.heckofanapp:search:1.1.1"
 ```
 
 ### Kotlin
@@ -19,7 +19,7 @@ implementation "com.heckofanapp:search:1.1.0"
 To use Kotlin, add the following to the `dependencies` block in the `build.gradle.kts` file.
 
 ```kotlin
-implementation("com.heckofanapp:search:1.1.0")
+implementation("com.heckofanapp:search:1.1.1")
 ```
 
 ### TOML
@@ -31,7 +31,7 @@ implementation(libs.heckofanapp.search)
 ```
 
 ```toml
-heckofanapp-search = { group = "com.heckofanapp", name = "search", version = "1.1.0" }
+heckofanapp-search = { group = "com.heckofanapp", name = "search", version = "1.1.1" }
 ```
 
 ## Specification
@@ -184,7 +184,7 @@ Search(
 
 ## Storybook
 
-To showcase the Search component, the Storybook app is released alongside each library version.  In other words, Search library version 1.1.0 corresponds to Storybook app version 1.1.0, which uses Search library version 1.1.0.  See the animation below of the Storybook app using the Search component.
+To showcase the Search component, the Storybook app is released alongside each library version.  In other words, Search library version 1.1.1 corresponds to Storybook app version 1.1.0, which uses Search library version 1.1.0.  See the animation below of the Storybook app using the Search component.
 
 <picture>
     <source
