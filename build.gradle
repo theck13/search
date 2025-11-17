@@ -4,7 +4,7 @@ buildscript {
     }
 
     ext {
-        version_compose = "2025.10.01"
+        version_compose = "2025.11.00"
         version_kotlin = "2.2.10"
         version_java = JavaVersion.VERSION_21
         version_name = project.property("version_name")
