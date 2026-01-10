@@ -8,7 +8,7 @@ buildscript {
         version_kotlin = "2.3.0"
         version_java = JavaVersion.VERSION_21
         version_name = project.property("version_name")
-        version_test = "0.0.1-alpha11"
+        version_test = "0.0.1-alpha12"
     }
 }
 
